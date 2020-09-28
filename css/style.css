@@ -1,0 +1,169 @@
+h1, h2, h3, h4, h5 {
+	font-family: 'Rubik', sans-serif;
+	color: rgb(0, 0, 0);
+}
+
+h1 {
+	font-size: 64px;
+}
+
+h2 {
+	font-size: 32px;
+	margin-bottom: 50px;
+}
+
+h3 {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+p {
+	font-size: 18px;
+	line-height: 21px;
+	color: inherit;
+}
+
+a {
+	text-color: inherit;
+	color: rgb(60, 60, 60);
+}
+
+body {
+	background: rgb(240, 240, 240);
+}
+
+main {
+	max-width: 1024px;
+	width: 80%;
+	margin: auto;
+	font-family: 'Karla', sans-serif;
+	color: rgb(60, 60, 60);
+}
+
+section, header {
+	margin: 100px 0 50px;
+}
+
+
+@media only screen and (max-width: 728px) {
+	h1 {
+		font-size: 48px;
+	}
+	
+	h2 {
+		font-size: 24px;
+	}
+	
+	h3 {
+		font-size: 21px;
+	}
+	
+	p {
+		font-size: 14px;
+		line-height: 18px;
+	}
+	
+	section, header {
+		margin: 50px 0 50px;
+	}
+}
+
+/* A propos */
+
+section#apropos p {
+	width: 90%;
+}
+
+@media only screen and (max-width: 728px) {
+	section#apropos p {
+		width: 100%;
+	}
+}
+
+section#apropos p:first-of-type {
+	margin-bottom: 20px;
+}
+
+/* Travaux */
+
+section#travaux article {
+	margin: 50px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+section#travaux article:nth-child(2n+1) {
+	flex-direction: row-reverse;
+}
+
+section#travaux article:nth-child(2n+1) img {
+	margin-left: 5%;
+}
+
+section#travaux article img {
+	width: 40%;
+	margin-right: 5%;
+	height: auto;
+}
+
+section#travaux article .textContent {
+	width: 55%;
+}
+
+@media only screen and (max-width: 728px) {
+  section#travaux article, section#travaux article:nth-child(2n+1) {
+	  flex-direction: column;
+	  align-items: flex-start;
+  }
+  
+  section#travaux article:nth-child(2n+1) img {
+	  margin-left: 0;
+  }
+ 
+  section#travaux article img {
+	  margin-bottom: 30px;
+	  width: 100%;
+	  margin-right: 0;
+  } 
+  
+  section#travaux article .textContent {
+	  width: 100%;
+  }
+}
+
+/* Contact */
+
+section#contact p {
+	width: 90%;
+}
+
+@media only screen and (max-width: 728px) {
+	section#contact p {
+		width: 100%;
+	}
+}
+
+section#contact address {
+	margin: 20px 0;
+}
+
+section#contact address ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+}
+
+section#contact address ul li a {
+	margin: 5px 0;
+	display: inline-block;
+	text-decoration: none;
+}
+
+/* footer */
+
+footer {
+	margin: 50px 0;
+	text-align: center;
+}
